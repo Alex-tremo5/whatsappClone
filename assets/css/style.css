@@ -126,3 +126,65 @@
     opacity: 0.8;
  }
 
+ .chatlist {
+    position: relative;
+    height: calc(100% - 108px);
+    overflow-y: auto;
+ }
+
+ .chatlist .block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    cursor: pointer;
+ }
+
+ .chatlist .block .imgbx {
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+ }
+
+ .chatlist .block .details {
+    position: relative;
+    width: 100%;
+ }
+
+ .listHead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+ }
+
+ .listHead h4 {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #111;
+ }
+
+ .time {
+    font-size: 0.75em;
+    color: #aaa;
+ }
+
+ .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .message p {
+    color: #aaa;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
